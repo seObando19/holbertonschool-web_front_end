@@ -1,0 +1,11 @@
+/*Write a Sass file that creates classes with different width:
+col-1 with width equals to 100%
+col-2 with width equals to 50%
+col-3 with width equals to 33.3333333333%
+col-4 with width equals to 25%
+*/
+@for $size from 1 to 5 {
+    .col-#{$size} {
+      width: (100% / $size);
+    }
+}
